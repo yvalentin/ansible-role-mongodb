@@ -10,5 +10,5 @@
     repo: >-
       deb http://repo.mongodb.org/apt/{{ ansible_facts['distribution'] | lower }}
       {{ ansible_distribution_release }}/mongodb-org/{{ manala_mongodb_install_version }} main
-    filename: "mongodb-org-{{ manala_mongodb_install_version }}.list"
+    filename: "mongodb-org-{{ manala_mongodb_install_version }}"
     state: present
